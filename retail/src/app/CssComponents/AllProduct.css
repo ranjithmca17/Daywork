@@ -1,0 +1,46 @@
+
+.products {
+    margin: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.product-table th,
+.product-table td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #f4f4f4;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-item.active button {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+
+button {
+    cursor: pointer;
+}

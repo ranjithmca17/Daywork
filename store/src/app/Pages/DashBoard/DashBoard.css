@@ -1,0 +1,94 @@
+body {
+    background-color: #f0f0f0; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.billing-page {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 0.5em;
+    width: 100%;
+}
+
+.billing-category {
+    background-color: #5070f8; 
+    color: white; 
+    position: fixed;
+    padding: 2em;
+    border-radius: 15px;
+    width: 15%;
+    height: 100vh; 
+    overflow-y: auto; /* Added for better scrolling if content exceeds */
+}
+
+.billing-dashboard {
+    background-color: #ffffff; 
+    width: 50%;
+    margin-left: 20%;
+    height: 100vh;
+    border-radius: 15px; 
+    overflow-y: auto; /* Added for better scrolling if content exceeds */
+}
+
+.billing-billcart {
+    width: 35%;
+    height: auto;
+    left: 70%;
+    top: 8%;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .billing-category {
+        width: 20%; /* Adjust width for medium screens */
+    }
+    .billing-dashboard {
+        width: 55%;
+        margin-left: 15%; /* Adjust margin for alignment */
+    }
+    .billing-billcart {
+        width: 25%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .billing-page {
+        flex-direction: column;
+    }
+
+    .billing-category {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1em;
+    }
+
+    .billing-dashboard {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0; 
+    }
+
+    .billing-billcart {
+        width: 100%;
+        margin-top: 1em; 
+        border-radius: 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    .billing-category {
+        padding: 0.5em;
+    }
+
+    .billing-dashboard,
+    .billing-billcart {
+        padding: 0.5em;
+    }
+}
+

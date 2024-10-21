@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 1em;
+}
+
+.links ul li :any-link{
+    text-decoration: none;
+    /* color: black; */
+}
